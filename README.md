@@ -1,28 +1,14 @@
-== README
+# README file for Launch Hackaton Project codename 'Calling Card'
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In a sentence this project is: 
 
-Things you may want to cover:
+'A location based meetup app' 
 
-* Ruby version
+Use case: 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+	Paul is out exploring the city with a friend when he recieves a push
+	notification from our app that he has entered a Calling Card users favorite
+	location. Michelle's profile is displayed on the app as well as a breif
+	description of why this bench in golden gate park is her favorite. Paul
+	decides to leave a brief message for Michelle. Michelle recieves the message
+	at work.	
