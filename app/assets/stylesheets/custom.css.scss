@@ -7,9 +7,13 @@ body {
 	padding-top: 60px
 }
 
+/* table */
+
 table th, td {
-	border: 1px solid black;
+	border: 1px solid black; 
+	padding: 5px;
 }
+
 
 /* mixins, variables, etc. */
 
