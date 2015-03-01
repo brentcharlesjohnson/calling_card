@@ -3,7 +3,14 @@
   <%= gravatar_for @user %>
   <%= @user.name %>
 </h1>
-<h2>
-	<%= @user.age %>
-	<%= @user.hometown %>
-</h2>
+<table>
+	<tr>
+		<th> age </th>
+		<th> hometown </th>
+	</tr>
+
+	<tr>
+		<td> <%= @user.age %> </th>
+		<td> <%= @user.hometown %> </th>
+	</tr>
+</table>
