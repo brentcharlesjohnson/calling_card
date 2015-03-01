@@ -4,7 +4,7 @@
 /* universal */
 
 body { 
-	padding-top: 70px
+	padding-top: 60px
 }
 
 /* mixins, variables, etc. */
@@ -17,7 +17,18 @@ $gray-medium-light: #eaeaea;
   box-sizing:         border-box;
 }
 
+/* forms */
 
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
 
 /* miscellaneous */
 
