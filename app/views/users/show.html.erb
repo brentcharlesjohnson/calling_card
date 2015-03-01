@@ -1,1 +1,9 @@
-<%= @user.name %>, <%= @user.email %>, <%= @user.age %>, <%= @user.hometown %>
+<% provide(:title, @user.name) %>
+<h1>
+  <%= gravatar_for @user %>
+  <%= @user.name %>
+</h1>
+<h2>
+	<%= @user.age %>
+	<%= @user.hometown %>
+</h2>
