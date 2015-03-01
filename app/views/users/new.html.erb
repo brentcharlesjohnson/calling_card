@@ -1,3 +1,59 @@
 <% provide(:title, 'Sign Up') %>
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+
+    <div class="preloader">
+       <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+    </div>
+
+
+    <div id="signup">
+
+      <section class="login-part">
+        <p class="login-overlay">
+          Sign up for Love Spot
+        </p>
+        <form method="post">
+          <input class="form-control" type="name" name="name" placeholder="Name" required="required" />
+          <input class="form-control" type="text" name="email" placeholder="Email" required="required" />
+          <input class="form-control" type="password" name="pw" placeholder="Password" required="required" />
+          <input class="form-control" type="favspot" name="favspot" placeholder="What is your spot?" required="required" />
+          <input class="form-control" type="card" name="card" placeholder="What is your calling card?" required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+          <p class="disclaimer">By signing up, you agree with our <a href="#">Terms of Service</a> & <a href="#">Privacy Policy</a></p>
+        </form>
+       </section>
+      
+    </div>
+
+ 
+  
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+		<script src="js/cbpAnimatedHeader.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/jquery.scrollTo.js" defer="defer"></script>
+    <script src="js/jquery.nav.js" defer="defer"></script>
+    <script src="js/imagesloaded.pkgd.min.js" defer="defer"></script>
+    <script src="js/isotope.min.js" defer="defer"></script>
+    <script src="js/jquery.magnific-popup.min.js" defer="defer"></script>
+    <script src="js/jqBootstrapValidation.js" defer="defer"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+
+      $(document).ready(function(){
+        isotope();
+        signupOverlay();
+        loginOverlay();
+      });
+
+    </script>
+
