@@ -1,9 +1,10 @@
 User.create!(name:  "Example User",
 						 email: "example@railstutorial.org",
 						 age:										20,
-						 hometown:							"anytown USA",
+						 hometown:							"Chicago",
 						 password:              "foobar",
-						 password_confirmation: "foobar")
+						 password_confirmation: "foobar",
+						 admin: true)
 
 cities = %w(Dallas Charlotte Los\ Angeles San\ Francisco Seattle New\ York)
 99.times do |n|
