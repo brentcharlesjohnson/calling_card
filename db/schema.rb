@@ -11,7 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150304022355) do
+ActiveRecord::Schema.define(version: 20150319024329) do
+
+  create_table "locations", force: :cascade do |t|
+    t.decimal  "longitude"
+    t.decimal  "latitude"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "loves", force: :cascade do |t|
+    t.text     "reason"
+    t.integer  "user_id"
+    t.integer  "location_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "loves", ["location_id"], name: "index_loves_on_location_id"
+  add_index "loves", ["user_id"], name: "index_loves_on_user_id"
+
+  create_table "microposts", force: :cascade do |t|
+    t.text     "content"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "microposts", ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
+  add_index "microposts", ["user_id"], name: "index_microposts_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
