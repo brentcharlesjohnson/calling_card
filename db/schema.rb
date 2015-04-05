@@ -13,24 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150319024329) do
 
-  create_table "locations", force: :cascade do |t|
-    t.decimal  "longitude"
-    t.decimal  "latitude"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "loves", force: :cascade do |t|
-    t.text     "reason"
-    t.integer  "user_id"
-    t.integer  "location_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
-
-  add_index "loves", ["location_id"], name: "index_loves_on_location_id"
-  add_index "loves", ["user_id"], name: "index_loves_on_user_id"
-
   create_table "microposts", force: :cascade do |t|
     t.text     "content"
     t.integer  "user_id"
