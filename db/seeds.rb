@@ -1,6 +1,6 @@
 User.create!(name:  "Example User",
 						 email: "example@railstutorial.org",
-						 age:										20,
+						 birthday:	Date.new(1980, 8, 8),
 						 hometown:							"Chicago",
 						 password:              "foobar",
 						 password_confirmation: "foobar",
@@ -10,12 +10,12 @@ cities = %w(Dallas Charlotte Los\ Angeles San\ Francisco Seattle New\ York)
 99.times do |n|
 	name  = Faker::Name.name
 	email = "example-#{n+1}@railstutorial.org"
-	age = 16 + rand(25)
+	birthday = Date.today << rand(240)	
 	hometown = cities.sample
 	password = "password"
 	User.create!(name:  name,
 							 email: email,
-							 age:										age,
+							 birthday:							birthday,
 							 hometown:							hometown,
 							 password:              password,
 							 password_confirmation: password)
